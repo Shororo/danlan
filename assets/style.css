@@ -1,0 +1,281 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+
+body {
+  line-height:2;
+  letter-spacing: 0.15em;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Serif JP', serif;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  vertical-align:baseline;
+  background:transparent;
+  text-decoration: none;
+  color:black;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000;
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;  
+  border-top:1px solid #cccccc;
+  margin:0 0;
+  padding:0;
+  border: 0;
+}
+
+/* form要素のcss全リセット */
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: none;
+}
+
+input[type='submit'],
+input[type='button'],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+/* form要素のcss全リセットここまで */
+/*リセットここまで*/
+
+/* font-sizeレスポンシブ */
+html {
+  /* ルートのフォントサイズを10pxに設定しておく */
+  font-size: 62.5%;
+}
+
+body {
+	/* ルートのフォントサイズを1.6em（16pxと同等のサイズ）に設定 */
+	font-size: 1.6em;
+}
+
+h1{
+	/* 68px */
+	font-size: 3.3rem;
+	margin: 2rem 0;
+}
+a{
+	/* 38px */
+	font-size: 1.6rem;
+
+}
+/* font-sizeレスポンシブここまで */
+
+/*トップページ*/
+img{
+  object-fit: cover;
+}
+.bg-white{
+  background-color: white;
+}
+header{
+  width:100%;
+  height: 7vh;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 25% 25% 25% 25%;
+  background-color: rgba(0,0,0,0.7);
+  position: fixed;
+  z-index: 10;
+}
+header .logo{
+      grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+header .yoyaku{
+      grid-row: 1 / 2;
+    grid-column: 3 / 4;
+}
+header .navigation{
+      grid-row: 1 / 2;
+    grid-column: 4 / 5;
+}
+header a{
+    text-align: center;
+}
+header img{
+  height: 100%;
+}
+nav{
+  display: none;
+}
+.top{
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+}
+/*.top文の空間を確保する*/
+.top-empty{
+  /*透明の要素*/
+  background-color: rgba(0,0,0,0);
+    /* 重ねる範囲を指定 */
+    width: 100%;
+  height: 100vh;
+}
+.top img{
+  width: 100%;
+  height: 100vh;
+}
+.about{
+  background: url(../images/member01.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+
+}
+.about::before{
+    /* 透過した黒を重ねる */
+    background-color: rgba(0,0,0,0.5);
+    /* 重ねる範囲を指定 */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: ' ';
+}
+.about img{
+  object-fit: contain;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  transform : translateY(-50%);
+  filter: drop-shadow(3px 3px 1px rgba(0,0,0,0.6));
+}
+.contents{
+  position: relative;
+  margin-bottom: 50px;
+}
+.contents img{
+  width: 100%;
+  height: 60vh;
+}
+.contents .gradation{
+  position: relative;
+}
+.contents .gradation:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 60%, #fff 90%);
+    z-index: 1;
+}
+.contents h1{
+  position: absolute;
+  left:5%;
+  z-index: 2;
+}
+.contents .text{
+  text-align: center;
+}
+.contents a{
+border: solid 1px black;
+}
+/*トップページここまで*/
