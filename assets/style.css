@@ -336,10 +336,6 @@ nav{
 	margin-right: auto;
   padding-top: 2rem;
 }
-#otoiawase iframe{
-	width:100%;
-	object-fit: cover;
-}
 #otoiawase form{
 	display: none;
 }
