@@ -7,19 +7,23 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- レスポンシブ対応するためのメタデータ --><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- 任意のCSSを読み込む -->
-	<link rel="stylesheet" href="assets/style.css">
 	<!-- fontawesomeからスクリプト取得 -->
 	<script src="https://kit.fontawesome.com/7c414374ac.js" crossorigin="anonymous"></script>
 	<!-- グーグルからライブラリを取得 -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p|Montserrat|Noto+Serif+JP|Sawarabi+Mincho&display=swap" rel="stylesheet">
+		<!-- bxslider -->
+	<link rel="stylesheet" href="assets/bxslider/dist/jquery.bxslider.css">
+		<!-- myCSS -->
+	<link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
 	<header>
-		<a href="index.html#main" class="logo"><img src="images/perception.jpg" alt="だんらんロゴ"></a>
-		<a href="#" class="yoyaku"><img src="images/perception.jpg" alt="予約"></a>
-		<a href="#" class="navigation"><img src="images/perception.jpg" alt="ナビゲーション"></a>
+		<a href="index.html#main" class="logo"><img src="images/だんらんロゴ白.png" alt="だんらんロゴ"></a>
+		<a href="#" class="yoyaku"><img src="images/予約.png" alt="予約"></a>
+		<a href="#" class="navigation"><img src="images/ハンバーガー.png" alt="ナビゲーション"></a>
 
 		<nav>
 			<ul>
@@ -34,19 +38,26 @@
 	</header>
 
 	<div id="main">
-		<div class="top slider">
-			<img src="images/perception.jpg" alt="だんらん画像01">
+		<img src="images/だんらんタイトル.png" alt="だんらんタイトル" class="top-text">
+		<div class="slider">
+			<img src="images/kesiki02.jpg" alt="だんらん画像01">
+			<img src="images/gaikan.jpg" alt="だんらん画像01">
+			<img src="images/onsen06.jpg" alt="だんらん画像01">
+			<img src="images/kotatu02.jpg" alt="だんらん画像01">
 		</div>
 		<div class="top-empty"></div>
+		
 		<div class="bg-white">
+		
 			<div class="about">
 				<img src="images/rei.png" alt="だんらんについて:~~~~~">
 			</div>
 
+			<div class=" bg-black">
 			<div class="contents kannai">
-				<div><h1>館内</h1></div>
+				<div><h1>館内<img src="images/だんらんロゴ黒.png" alt="だんらんロゴ" class="subtitle-logo"></h1></div>
 				<div class="gradation">
-					<img src="images/perception.jpg" alt="だんらん 館内">
+					<img src="images/kanai01.jpg" alt="だんらん 館内">
 				</div>
 				<div class="text">
 					<p>案内です。案内です。案内です。案内です。案内です。</p>
@@ -55,11 +66,12 @@
 					<a href="#">館内をもっと見る</a>
 				</div>
 			</div>
+			</div>
 
 			<div class="contents oheya">
-				<div><h1>お部屋</h1></div>
+				<div><h1>お部屋<img src="images/だんらんロゴ黒.png" alt="だんらんロゴ" class="subtitle-logo"></h1></div>
 				<div class="gradation">
-					<img src="images/perception.jpg" alt="だんらん お部屋">
+					<img src="images/kotatu04.jpg" alt="だんらん お部屋">
 				</div>
 				<div class="text">
 					<p>案内です。案内です。案内です。案内です。案内です。</p>
@@ -68,11 +80,12 @@
 					<a href="#">お部屋をもっと見る</a>
 				</div>
 			</div>
-
+			
+			<div class=" bg-black">
 			<div class="contents ryori">
-				<div><h1>お料理</h1></div>
+				<div><h1>お料理<img src="images/だんらんロゴ黒.png" alt="だんらんロゴ" class="subtitle-logo"></h1></div>
 				<div class="gradation">
-					<img src="images/perception.jpg" alt="だんらん 料理">
+					<img src="images/kaiseki-sukiyaki.jpg" alt="だんらん 料理">
 				</div>
 				<div class="text">
 					<p>案内です。案内です。案内です。案内です。案内です。</p>
@@ -81,11 +94,12 @@
 					<a href="#">お料理をもっと見る</a>
 				</div>
 			</div>
+			</div>
 
 			<div class="contents onsen">
-				<div><h1>温泉</h1></div>
+				<div><h1>温泉<img src="images/だんらんロゴ黒.png" alt="だんらんロゴ" class="subtitle-logo"></h1></div>
 				<div class="gradation">
-					<img src="images/perception.jpg" alt="だんらん 温泉">
+					<img src="images/onasen06.png" alt="だんらん 温泉">
 				</div>
 				<div class="text">
 					<p>案内です。案内です。案内です。案内です。案内です。</p>
@@ -95,11 +109,14 @@
 				</div>
 			</div>
 
+			<div class="bg-black">
+			<div class="footers">
 			<div id="otoiawase">
-				<!-- ここにグーグルマップ -->
 				<h1>アクセス・お問い合わせ</h1>
-				<a href="tel:000-1234-5678">000-1234-5678</a>
-				<p class="mail_button">メール</p>
+				<!-- グーグルマップ -->
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13405.39154239475!2d130.8196080222187!3d32.86251381914505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3540e57241f4da5b%3A0xb4472c7d8e07a72d!2z6I-K6Zm955S65b255aC0!5e0!3m2!1sja!2sjp!4v1578961049692!5m2!1sja!2sjp" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				<p>お電話：<a href="tel:000-1234-5678">000-1234-5678</a></p>
+				<p class="mail_button">メール<i class="fas fa-plus plus" aria-hidden="true"></i></p>
 				<!-- ここにはwordpressでメールフォームを出す -->
 				<form>
 					<p>内容です。内容です。内容です。内容です。内容です。</p>
@@ -114,13 +131,43 @@
 				<i class="far fa-copyright mr-2" aria-hidden="true"></i>
 				<small>2020 KamiyaonsenDanlan</small>
 			</div>
-		</div>
+			</div>
+			</div>
 	</div>
-
+	</div>
 </div>
+
 <!-- bootstrap -->
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<script src="assets/bxslider/dist/jquery.bxslider.min.js"></script>
+<script>
+$(function(){
+  //スライドショーのオプション
+  $(".slider").bxSlider({
+    auto: true,
+    pause: 4000,
+    speed: 1000,
+  //一度に表示させる最大枚数
+  maxSlides: 1,
+  //タッチスワイプ許可設定
+  touchEnabled: true,
+  //タッチスワイプしたとみなす最低限の移動距離
+  swipeThreshold: 10,
+  //'full'はスライダーの数を黒点で、'short'はa/nで表示
+  pagerType: 'full',
+  // 画像の高さを自動調整
+  adaptiveHeight: true,
+  //コントロール表示
+  controls: false,
+  //スライドモード設定
+  mode: 'fade',
+  //スライド番号を表示する
+  pager: false
+			});
+	});
+</script>
 </body>
 </html>
