@@ -159,7 +159,6 @@ body {
 h1{
 	/* 68px */
 	font-size: 3rem;
-	padding: 2rem 0;
 }
 a{
 	/* 38px */
@@ -180,7 +179,7 @@ img{
 }
 header{
   width:100%;
-  height: 7vh;
+  height: 9vh;
   display: grid;
   grid-template-rows: 100%;
   grid-template-columns: 25% 35% 20% 20%;
@@ -261,7 +260,7 @@ nav{
 }
 .about::before{
     /* グラデーション */
-    background: -webkit-linear-gradient(top,black 0%, rgba(255, 255, 255, 0) 70%,#f9f6eb 90%);
+    background: -webkit-linear-gradient(top,black 0%, rgba(255, 255, 255, 0) 70%);
     /* 重ねる範囲を指定 */
     position: absolute;
     top: 0;
@@ -283,14 +282,23 @@ nav{
 }
 .contents{
   position: relative;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.contents .text, .contents h1{
   width:93%;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 2rem;
+}
+.contents h1{
+  border-bottom: solid 1px black;
+  width: 30%;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 .contents img{
   width: 100%;
-  height: 75vh;
+  height: 50vh;
 }
 .contents .gradation{
   position: relative;
@@ -326,6 +334,7 @@ nav{
 	width: 93%;
 	margin-left: auto;
 	margin-right: auto;
+  padding-top: 2rem;
 }
 #otoiawase iframe{
 	width:100%;
@@ -343,5 +352,18 @@ nav{
 .plus{
 	font-size: 1.8rem;
 	padding: 1rem;
+}
+.gmap {
+height: 0;
+overflow: hidden;
+padding-bottom: 56.25%;
+position: relative;
+}
+.gmap iframe {
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
 }
 /*トップページここまで*/
