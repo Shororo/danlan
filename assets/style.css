@@ -369,6 +369,15 @@ width: 100%;
 .insta{
 	position: relative;
 }
+.insta h1{
+  border-bottom: solid 1px black;
+  width: 30%;
+  margin-bottom: 1rem;
+  text-align: center;
+}
 .kabuse{
-	position: absolute;
+position: absolute;
+    width: 100%;
+    bottom: -6%;
+    left: 0;
 }
