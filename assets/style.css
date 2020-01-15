@@ -365,6 +365,10 @@ top: 0;
 height: 100%;
 width: 100%;
 }
-
 /*トップページここまで*/
-
+.insta{
+	position: relative;
+}
+.kabuse{
+	position: absolute;
+}
