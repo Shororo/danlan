@@ -236,8 +236,8 @@
 
 <script>
 $(function(){
-    $('#document').on('load', function(){
-        $('#document').contents().find('.powrMark').css('display','none');
+    $('iframe').on('load', function(){
+        $('iframe').contents().find('.powrMark').css('display','none');
     });
 });
 </script>
