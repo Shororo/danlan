@@ -1,0 +1,376 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+
+body {
+  line-height:2;
+  letter-spacing: 0.15em;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Serif JP', serif;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding-left:0.2rem;
+  vertical-align:baseline;
+  background:transparent;
+  text-decoration: none;
+  color:black;
+}
+a:hover{
+	  background:transparent;
+  text-decoration: none;
+  color:black;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000;
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;  
+  border-top:1px solid #cccccc;
+  margin:0 0;
+  padding:0;
+  border: 0;
+}
+
+/* form要素のcss全リセット */
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: none;
+}
+
+input[type='submit'],
+input[type='button'],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+/* form要素のcss全リセットここまで */
+/*リセットここまで*/
+
+/* font-sizeレスポンシブ */
+html {
+  /* ルートのフォントサイズを10pxに設定しておく */
+  font-size: 62.5%;
+}
+
+body {
+	/* ルートのフォントサイズを1.6em（16pxと同等のサイズ）に設定 */
+	font-size: 1.6em;
+}
+
+h1{
+	/* 68px */
+	font-size: 3rem;
+}
+a{
+	/* 38px */
+	font-size: 1.6rem;
+
+}
+/* font-sizeレスポンシブここまで */
+
+/*トップページ*/
+img{
+  object-fit: cover;
+}
+.bg-white{
+  background-color: white;
+}
+.bg-black{
+  background-color: #f9f6eb;
+}
+header{
+  width:100%;
+  height: 9vh;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 25% 35% 20% 20%;
+  background-color: rgba(0,0,0,0.7);
+  position: fixed;
+  z-index: 10;
+}
+header .logo{
+      grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+header .yoyaku{
+      grid-row: 1 / 2;
+    grid-column: 3 / 4;
+}
+header .navigation{
+      grid-row: 1 / 2;
+    grid-column: 4 / 5;
+}
+header a{
+    text-align: center;
+}
+header img{
+  height: 100%;
+}
+nav{
+  display: none;
+}
+
+/*.top文の空間を確保する*/
+.top-empty{
+  /*透明の要素*/
+  background-color: rgba(0,0,0,0);
+    /* 重ねる範囲を指定 */
+    width: 100%;
+  height: 100vh;
+}
+
+/* スライダー */
+.bx-wrapper {
+		position: fixed;
+		z-index: -2;
+    background-color: transparent;
+    margin: 0px auto 0px;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+  	height: 100vh;
+}
+.bx-wrapper img {
+    display: block;
+      width: 100%;
+  height: 100vh;
+    margin: 0px auto;
+}
+/* bsslider ページャーをスライダーの内側に収める */
+.bx-wrapper .bx-controls-auto,
+.bx-wrapper .bx-pager {
+    bottom: 20px;
+}
+/* スライダーここまで */
+.top-text{
+	position: fixed;
+	width: 100%;
+	height:80vh;
+	object-fit: contain;
+	z-index:-1;
+  top: 50%;
+  transform : translateY(-50%);
+  filter: drop-shadow(3px 3px 1px rgba(0,0,0,0.6));
+}
+.about{
+  background: url(../images/kannai02.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+
+}
+.about::before{
+    /* グラデーション */
+    background: -webkit-linear-gradient(top,black 0%, rgba(255, 255, 255, 0) 70%);
+    /* 重ねる範囲を指定 */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: ' ';
+    height: 105%;
+}
+.about img{
+  object-fit: contain;
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+}
+.contents{
+  position: relative;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+.contents .text, .contents h1{
+  width:93%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contents h1{
+  border-bottom: solid 1px black;
+  width: 30%;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.contents img{
+  width: 100%;
+  height: 50vh;
+}
+.contents .gradation{
+  position: relative;
+}
+.bg-white .gradation:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 60%, #fff 90%);
+    z-index: 1;
+}
+.bg-black .gradation:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 60%, #f9f6eb 90%);
+    z-index: 1;
+}
+.contents .text{
+  text-align: center;
+}
+.button-nextpage{
+	padding-top: 2rem;
+}
+.contents a{
+	font-size: 2.0rem;
+	border: solid 1px black;
+}
+.footers{
+	width: 93%;
+	margin-left: auto;
+	margin-right: auto;
+  padding-top: 2rem;
+}
+#otoiawase form{
+	display: none;
+}
+#otoiawase h1, #otoiawase p{
+	font-size: 2.2rem;
+}
+.site-info{
+	text-align: center;
+}
+.plus{
+	font-size: 1.8rem;
+	padding: 1rem;
+}
+.gmap {
+height: 0;
+overflow: hidden;
+padding-bottom: 56.25%;
+position: relative;
+}
+.gmap iframe {
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+}
+
+/* 余分な要素遮断 */
+.powrMark {
+	display: none !important;
+}
+/* 余分な要素遮断ここまで */
+
+/*トップページここまで*/
+
