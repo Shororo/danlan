@@ -345,6 +345,12 @@ nav{
 #otoiawase h1, #otoiawase p{
 	font-size: 2.2rem;
 }
+#otoiawase h1{
+	  border-bottom: none;
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: left;
+}
 .site-info{
 	text-align: center;
 }
@@ -368,16 +374,19 @@ width: 100%;
 /*トップページここまで*/
 .insta{
 	position: relative;
+	padding-top: 3rem;
 }
 .insta h1{
-  border-bottom: solid 1px black;
-  width: 30%;
-  margin-bottom: 1rem;
-  text-align: center;
+    border-bottom: solid 1px black;
+    width: 40%;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .kabuse{
 position: absolute;
     width: 100%;
-    bottom: -6%;
+    bottom: -6.5%;
     left: 0;
 }
