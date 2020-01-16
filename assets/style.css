@@ -292,15 +292,16 @@ nav{
 }
 .contents h1{
   border-bottom: solid 1px black;
+  padding-bottom: 1rem;
   width: 30%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 .contents img{
   width: 100%;
   height: 50vh;
 }
-.contents .gradation{
+.gradation{
   position: relative;
 }
 .bg-white .gradation:after{
@@ -339,17 +340,24 @@ nav{
 	margin-right: auto;
   padding-top: 2rem;
 }
-#otoiawase form{
+.otoiawase form{
 	display: none;
 }
-#otoiawase h1, #otoiawase p{
+.otoiawase h1{
 	font-size: 2.2rem;
+} 
+.otoiawase p{
+	font-size: 1.6rem;
 }
-#otoiawase h1{
-	  border-bottom: none;
-    width: 100%;
-    margin-bottom: 2rem;
-    text-align: left;
+.otoiawase p:nth-of-type(1){
+	padding-top: 2rem;
+}
+.center{
+	height: 8rem;
+	text-align:center;
+}
+.otoiawase img{
+	height: 100%;
 }
 .site-info{
 	text-align: center;
@@ -371,7 +379,6 @@ top: 0;
 height: 100%;
 width: 100%;
 }
-/*トップページここまで*/
 .insta{
 	position: relative;
 	padding-top: 3rem;
@@ -379,10 +386,16 @@ width: 100%;
 .insta h1{
     border-bottom: solid 1px black;
     width: 40%;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+.otoiawase h1{
+	  border-bottom: none;
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: left;
 }
 .kabuse{
 position: absolute;
@@ -390,3 +403,116 @@ position: absolute;
     bottom: -6.5%;
     left: 0;
 }
+/*トップページここまで*/
+
+/* シングルページここから */
+.singlepage-top{
+	position: fixed;
+	width: 100%;
+	height: 80vh;
+	z-index: -1;
+}
+.singletop-img{
+	position: absolute;
+	top:0;
+	left:0;
+	height: 80vh;
+	width: 100%;
+	z-index: 1;
+}
+.singletop-text{
+	position: absolute;
+	height: 80%;
+	width:100%;
+	object-fit: contain;
+	z-index: 2;
+	  top: 55%;
+	  	left:0;
+  transform : translateY(-50%);
+  filter: drop-shadow(3px 3px 1px rgba(0,0,0,0.6));
+}
+.singlepage-contents{
+	padding-top:3rem;
+	padding-bottom: 3rem;
+	width: 90%;
+	    margin-left: auto;
+    margin-right: auto;
+	
+}
+.singlepage-contents p{
+	text-align: center;
+}
+.singlepage-contents img{
+	height: 40vh;
+	width: 100%;
+}
+.singlepage-contents h1{
+		font-size: 3rem;
+	  border-bottom: solid 1px black;
+    width:100%;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.singlepage-contents h2{
+		font-size: 2.5rem;
+		border-top: solid 1px black;
+	  border-bottom: solid 1px black;
+	  padding-top:1rem;
+	  padding-bottom:1rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+#single .top-empty{
+background-color: rgba(0,0,0,0);
+    width: 100%;
+	height: 80vh;
+}
+footer{
+	padding-top: 2rem;
+}
+footer img{
+	height: 100%;
+}
+footer p, footer a{
+	font-size: 1rem;
+	text-align: center;
+}
+.back-color:nth-of-type(odd){
+	background-color: #f9f6eb;
+}
+.back-color:nth-of-type(odd)>.singlepage-contents>.gradation::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 60%, #f9f6eb 90%);
+    z-index: 1;
+}
+.back-color:nth-of-type(even){
+	background-color: white;
+}
+.back-color:nth-of-type(even)>.singlepage-contents>.gradation::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 60%, white 90%);
+    z-index: 1;
+}
+.onsen-time{
+	border: solid 1px black;
+}
+h3 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+/* シングルページここまで */
