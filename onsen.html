@@ -29,10 +29,11 @@
 
 		<nav>
 			<ul>
-				<li><a href="#">館内</a></li>
-				<li><a href="#">お部屋</a></li>
-				<li><a href="#">お料理</a></li>
-				<li><a href="#">温泉</a></li>
+				<li><a href="kannai.html">館内</a></li>
+				<li><a href="oheya.html">お部屋</a></li>
+				<li><a href="ryori.html">料理</a></li>
+				<li><a href="onsen.html">温泉</a></li>
+				<li><a href="rekishi.html">歴史</a></li>
 				<li><a href="index.html#otoiawase">アクセス・お問い合わせ</a></li>
 			</ul>
 		</nav>
@@ -42,11 +43,10 @@
 	<div id="single">
 		
 		<div class="singlepage-top">
-			<img src="images/onsen04.jpg" alt="" class="singletop-img">
-			<img src="images/だんらんタイトル.png" alt="" class="singletop-text">
+			<img src="images/onsen06.jpg" alt="" class="singletop-img">
+			<img src="images/だんらん湯.png" alt="" class="singletop-text">
 		</div>
 		
-				<div class="top-empty"></div>
 		
 			<div class="back-color">
 			<div class="gradation"></div>
@@ -67,7 +67,7 @@
 		<div class="singlepage-contents">
 			<h2>サブ題</h2>
 			<div class="gradation">
-				<img src="images/onsen04.jpg" alt="">
+				<img src="images/onsen05.jpg" alt="">
 			</div>
 			<p>案内です。案内です。案内です。案内です。案内です。</p>
 			<p>案内です。案内です。案内です。案内です。案内です。</p>
@@ -79,7 +79,7 @@
 				<div class="singlepage-contents">
 			<h2>サブ題</h2>
 			<div class="gradation">
-			<img src="images/onsen04.jpg" alt="">
+			<img src="images/onasen06.png" alt="">
 			</div>
 			<p>案内です。案内です。案内です。案内です。案内です。</p>
 			<p>案内です。案内です。案内です。案内です。案内です。</p>
@@ -113,6 +113,8 @@
 	</footer>
 	</div>
 	
+	<!-- ナビゲーションが開かれた時の閉じるための空間 -->
+<div class="nav-cover"></div>
 	
 	<!-- jQuery ライブラリ -->
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -146,6 +148,18 @@
   mode: 'fade',
   //スライド番号を表示する
   pager: false
+});
+
+$(document).on('click',function(e) {
+   if(!$(e.target).closest('.navigation').length) {
+     // ターゲット要素の外側をクリックした時の操作
+     			$("nav").slideUp();
+			$(".nav-cover").slideUp();
+   } else {
+     // ターゲット要素をクリックした時の操作
+     			$("nav").slideToggle();
+			$(".nav-cover").slideToggle();
+   }
 });
 
 });
