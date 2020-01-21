@@ -223,6 +223,11 @@ header .logo{
 header .yoyaku{
       grid-row: 1 / 2;
     grid-column: 3 / 4;
+    height: 85%;
+    position: absolute;
+        top: 50%;
+  transform : translateY(-50%);
+    
 }
 header .navigation{
       grid-row: 1 / 2;
@@ -334,7 +339,7 @@ nav a{
 }
 .contents img{
   width: 100%;
-  height: 50vh;
+  height: 40vh;
 }
 .gradation{
   position: relative;
@@ -374,6 +379,10 @@ nav a{
 	margin-left: auto;
 	margin-right: auto;
   padding-top: 2rem;
+}
+#otoiawase{
+	margin-top:-9vh;
+  padding-top:9vh;
 }
 #otoiawase form{
 	display: none;
@@ -487,6 +496,9 @@ position: absolute;
     margin-right: auto;
 	
 }
+.onsen-singlepage-contents{
+	padding-top:0;
+}
 .singlepage-contents p{
 	text-align: center;
 }
@@ -558,4 +570,31 @@ h3 {
     padding-top: 1rem;
     text-align: center;
 }
+.onsen-h1{
+	font-size: 3rem;
+    border-bottom: solid 1px black;
+    width: 95%;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 /* シングルページここまで */
+
+/* レスポンシブ */
+@media (min-width: 544px){
+.contents img {
+    width: 100%;
+    height: 80vh;
+}
+
+.singlepage-contents img {
+    width: 100%;
+    height: 80vh;
+}
+
+}
+
+/* レスポンシブここまで */
