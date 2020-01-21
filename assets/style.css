@@ -631,17 +631,7 @@ header .navigation{
 }
 @media (min-width: 1024px){
 .kabuse{
-    bottom: -30.5%;
-}
-}
-@media (min-width: 2787px){
-.kabuse{
-    bottom: -57.7%;
-}
-}
-@media (min-width: 2787px){
-.kabuse{
-    bottom: -57.7%;
+    bottom: -15.5%;
 }
 }
 /* レスポンシブここまで */
