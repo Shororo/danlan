@@ -1,229 +1,204 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-	<meta charset="UTF-8">
-	<title>神谷温泉 だんらん</title>
-	<!-- レスポンシブ対応するためのメタデータ --><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- fontawesomeからスクリプト取得 -->
-	<script src="https://kit.fontawesome.com/7c414374ac.js" crossorigin="anonymous"></script>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- fontawesome -->
+		<script src="https://kit.fontawesome.com/7c414374ac.js" crossorigin="anonymous"></script>
 		<!-- google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p|Montserrat|Noto+Serif+JP|Sawarabi+Mincho&display=swap" rel="stylesheet">
-	<!-- jQueryLibrary js -->
-	<!--
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	-->
-		<!-- bootstrapCSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<!-- bxsliderCSS -->
-	<link rel="stylesheet" href="assets/bxslider/dist/jquery.bxslider.css">
-	<!-- myCSS -->
-	<link rel="stylesheet" href="assets/style.css">
-</head>
+		<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p|Montserrat|Noto+Serif+JP|Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<!-- MyCSS -->
+		<link rel="stylesheet" href="assets/style.css">
+    <title>korpokkur</title>
+  </head>
+  <body>
+	<header>
+		<a href="index.html#main" class="logo"><img src="images/logo02_white.png" alt="コロポックル ロゴ"></a>
+		<p class="navigation"><img src="images/navigation_white.png" alt="ナビゲーションバー"></p>
 
-<body>
-					<header>
-		<a href="index.html#main" class="logo"><img src="images/だんらんロゴ白.png" alt="だんらんロゴ"></a>
-		<a href="#" class="yoyaku"><img src="images/予約.png" alt="予約"></a>
-		<p class="navigation"><img src="images/ハンバーガー.png" alt="ナビゲーション"></p>
-
-		<nav>
-			<ul>
-				<li><a href="index.html">トップページ</a></li>
-				<li><a href="kannai.html">館内</a></li>
-				<li><a href="oheya.html">お部屋</a></li>
-				<li><a href="ryori.html">料理</a></li>
-				<li><a href="onsen.html">温泉</a></li>
-				<li><a href="rekishi.html">歴史</a></li>
-				<li><a href="index.html#otoiawase">アクセス・お問い合わせ</a></li>
-			</ul>
-		</nav>
-
-	</header>
-
-	<div id="main">
-		<img src="images/だんらんタイトル.png" alt="だんらんタイトル" class="top-text">
-		<div class="slider">
-			<img src="images/kesiki02.jpg" alt="だんらん画像01">
-			<img src="images/gaikan.jpg" alt="だんらん画像01">
-			<img src="images/onsen06.jpg" alt="だんらん画像01">
-			<img src="images/kotatu02.jpg" alt="だんらん画像01">
+	<nav>
+		<div class="list-group">
+		  <button type="button" class="list-group-item list-group-item-action">期間限定</button>
+		  <button type="button" class="list-group-item list-group-item-action">人気商品</button>
+		  <button type="button" class="list-group-item list-group-item-action">商品一覧</button>
+		  <button type="button" class="list-group-item list-group-item-action" >新着情報</button>
 		</div>
-		<div class="top-empty"></div>
-		
-		<div class="bg-white">
+	</nav>
+</header>
 
-			<div class="about">
-				<img src="images/rei.png" alt="だんらんについて:~~~~~">
+<div class="main">
+	<div class="top">
+		<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		        <img src="images/cake03.jpg" class="d-block w-100" alt="コロポックル ケーキ">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="images/cake07_2.jpg" class="d-block w-100" alt="コロポックル ケーキ">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="images/cake15_2.jpg" class="d-block w-100" alt="コロポックル ケーキ">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="images/bisquit-2240478_2.jpg" class="d-block w-100" alt="コロポックル ケーキ">
+		    </div>
+		  </div>
+		</div>
+			<div class="title">
+				<h1>その一つを、<br>あなたのために</h1>
+				<img src="images/logo02.png" alt="コロポックル ロゴ">
 			</div>
-
-				<div class="contents kannai">
-					<div><h1>館内</h1></div>
-					<div class="gradation">
-						<img src="images/washitu03.jpg" alt="だんらん 館内">
-					</div>
-					<div class="text">
-						<p>築100年の歴史を持つ木造の一軒家</p>
-						<p>静かなひと時の中に、子供時代の好奇心が</p>
-						<p>蘇ります。"お婆ちゃんの家"を探検しよう。</p>
-						<div class="button-nextpage">
-						<a href="kannai.html">館内をもっと見る</a>
-						</div>
-					</div>
-				</div>
+	</div>
+	
+	<div class="empty"></div>
+	
+	<div class="bg-black_color-white">
+		<div class="kikan contents">
+			<h1>VALENTINE CAKE</h1>
+			<h2>大好きを形に</h2>
+			<p class="period">period:01.18-02.20</p>
 			
-			<div class="contents oheya">
-				<div><h1>お部屋</h1></div>
-				<div class="gradation">
-					<img src="images/heya06.jpg" alt="だんらん お部屋">
-				</div>
-				<div class="text">
-					<p>全室畳部屋。</p>
-					<p>夏には戸を開け小鳥の囀りに風流を感じ、</p>
-					<p>冬はこたつで用意された蜜柑や和菓子を</p>
-					<p>お楽しみください。</p>
-					<div class="button-nextpage">
-					<a href="oheya.html">お部屋をもっと見る</a>
-					</div>
-				</div>
-			</div>
-			
-				<div class="contents ryori">
-					<div><h1>料理</h1></div>
-					<div class="gradation">
-						<img src="images/kaiseki-sukiyaki.jpg" alt="だんらん 料理">
-					</div>
-					<div class="text">
-						<p>敷地で育った山菜と、自家農園のお野菜が</p>
-						<p>絶品の3種コースからお選びいただけます。</p>
-						<p>現地でとれた鮎、熊本で有名な赤牛など、</p>
-						<p>ここでしか味わえない料理を存分にご堪能ください。</p>
-						<div class="button-nextpage">
-						<a href="ryori.html">お料理をもっと見る</a>
-						</div>
-					</div>
-				</div>
-
-			<div class="contents onsen">
-				<div><h1>温泉</h1></div>
-				<div class="gradation">
-					<img src="images/onasen06.png" alt="だんらん 温泉">
-				</div>
-				<div class="text">
-					<p>100%天然"湯の華"のにごり湯</p>
-					<p>溜まった"湯の華"をお互いに塗りあって</p>
-					<p>お楽しみください。24時間開放＆貸切！！</p>
-					<div class="button-nextpage">
-					<a href="onsen.html">温泉をもっと見る</a>
-					</div>
-				</div>
+			<div class="shohin">
+			<img src="images/cake40_2.png" alt="コロポックル 期間限定 ケーキ">
+			<p>ショスタコーヴィチ</p>
+			<p>5800円</p>
 			</div>
 			
-						<div class="contents rekishi">
-				<div><h1>歴史</h1></div>
-				<div class="gradation">
-					<img src="images/genkan.jpg" alt="だんらん 歴史">
-				</div>
-				<div class="text">
-					<p>100年も前から沸き続ける温泉と、豊富な山の幸。</p>
-					<p>そして一人の女将によって存続される旅館「だんらん」</p>
-					<p>3つの要素が奏でるシンフォニーをあなたに</p>
-					<div class="button-nextpage">
-					<a href="rekishi.html">だんらんの歴史ををもっと見る</a>
-					</div>
-					</div>
-				</div>
+			<div class="shohin">
+			<img src="images/cake40_2.png" alt="コロポックル 期間限定 ケーキ">
+			<p>ショスタコーヴィチ</p>
+			<p>5800円</p>
+			</div>
 			
-			<!-- インスタ -->
-			<div class="insta">
+			<div class="shohin">
+			<img src="images/cake40_2.png" alt="コロポックル 期間限定 ケーキ">
+			<p>ショスタコーヴィチ</p>
+			<p>5800円</p>
+			</div>
+		</div>
+
+		<div class="ninki contents">
+			<h1>人気商品</h1>
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/cake40_2.png" alt="コロポックル 人気ケーキ">
+        <div class="carousel-caption d-md-block">
+			    <h5>ショスタコーヴィチ</h5>
+			    <p>5800円</p>
+			  </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/cake40_2.png" alt="コロポックル 人気ケーキ">
+        <div class="carousel-caption d-md-block">
+			    <h5>ショスタコーヴィチ</h5>
+			    <p>5800円</p>
+			  </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/cake40_2.png" alt="コロポックル 人気ケーキ">
+        <div class="carousel-caption d-md-block">
+			    <h5>ショスタコーヴィチ</h5>
+			    <p>5800円</p>
+			  </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+		</div>
+
+		<div class="menu contents">
+			<h1>商品一覧</h1>
+			<div class="flex width-90 p-top2">
+				<div class="shohin col-6">
+					<img src="images/cake40_2.png" alt="コロポックル ケーキ">
+						<p>ショスタコーヴィチ</p>
+						<p>5800円</p>
+				</div>
+				<div class="shohin col-6">
+					<img src="images/cake40_2.png" alt="コロポックル ケーキ">
+					<p>ショスタコーヴィチ</p>
+					<p>5800円</p>
+				</div>
+				<div class="shohin col-6">
+					<img src="images/cake40_2.png" alt="コロポックル ケーキ">
+					<p>ショスタコーヴィチ</p>
+					<p>5800円</p>
+				</div>
+				<div class="shohin col-6">
+					<img src="images/cake40_2.png" alt="コロポックル ケーキ">
+					<p>ショスタコーヴィチ</p>
+					<p>5800円</p>
+				</div>
+				<div class="shohin col-6">
+					<img src="images/cake40_2.png" alt="コロポックル ケーキ">
+					<p>ショスタコーヴィチ</p>
+					<p>5800円</p>
+				</div>
+								<div class="shohin col-6">
+					<img src="images/cake40_2.png" alt="コロポックル ケーキ">
+						<p>ショスタコーヴィチ</p>
+						<p>5800円</p>
+				</div>
+				<div class="shohin col-6">
+					<img src="images/cake40_2.png" alt="コロポックル ケーキ">
+					<p>ショスタコーヴィチ</p>
+					<p>5800円</p>
+				</div>
+				<div class="shohin col-6">
+					<img src="images/cake40_2.png" alt="コロポックル ケーキ">
+					<p>ショスタコーヴィチ</p>
+					<p>5800円</p>
+				</div>
+				<div class="shohin col-6">
+					<img src="images/cake40_2.png" alt="コロポックル ケーキ">
+					<p>ショスタコーヴィチ</p>
+					<p>5800円</p>
+				</div>
+				<div class="shohin col-6">
+					<img src="images/cake40_2.png" alt="コロポックル ケーキ">
+					<p>ショスタコーヴィチ</p>
+					<p>5800円</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="news contents">
 			<h1>新着情報</h1>
-			
-			<div class="powr-instagram-feed" id="73442935_1579051119"></div>
-			<script src="https://www.powr.io/powr.js?platform=html"></script>
-			
-						<div class="bg-black kabuse">
-				<div class="footers">
-					<div id="otoiawase">
-						<h1>アクセス・お問い合わせ</h1>
-						<!-- グーグルマップ -->
-						<div class="gmap">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.348385590416!2d130.82617411549865!3d32.86250058692829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3540e57241f4da5b%3A0xb4472c7d8e07a72d!2z6I-K6Zm955S65b255aC0!5e0!3m2!1sja!2sjp!4v1578992607440!5m2!1sja!2sjp" width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" id="aaa"></iframe>
-					</div>
-						<p>TEL：<a href="tel:000-1234-5678">000-1234-5678</a></p>
-						<p>MAIL：akagimaki@yahoo.co.jp</p>
-						<div class="center"><img src="images/だんらんロゴ.png" alt="だんらんロゴ黒"></div>
-					</div>
-
-					<div class="site-info">
-						<i class="far fa-copyright mr-2" aria-hidden="true"></i>
-						<small>2020 KamiyaonsenDanlan</small>
-					</div>
+				<div class="insta-card flex p-top2">
 				</div>
-			</div>
-			
-			</div>
 		</div>
 	</div>
 </div>
 
-<!-- ナビゲーションが開かれた時の閉じるための空間 -->
-<div class="nav-cover"></div>
+<footer>
 
-<!-- jQuery ライブラリ -->
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
-<!-- bootstrap -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</footer>
 
 
-		<script src="assets/bxslider/dist/jquery.bxslider.min.js"></script>
-<script>
-	$(function(){
-  //スライドショーのオプション
-  $(".slider").bxSlider({
-  	auto: true,
-  	pause: 4000,
-  	speed: 1000,
-  //一度に表示させる最大枚数
-  maxSlides: 1,
-  //タッチスワイプ許可設定
-  touchEnabled: true,
-  //タッチスワイプしたとみなす最低限の移動距離
-  swipeThreshold: 10,
-  //'full'はスライダーの数を黒点で、'short'はa/nで表示
-  pagerType: 'full',
-  // 画像の高さを自動調整
-  adaptiveHeight: true,
-  //コントロール表示
-  controls: false,
-  //スライドモード設定
-  mode: 'fade',
-  //スライド番号を表示する
-  pager: false
-});
-
-	$(".contents:nth-child(even)").addClass("bg-black");
-	
-
-$(document).on('click',function(e) {
-   if(!$(e.target).closest('.navigation').length) {
-     // ターゲット要素の外側をクリックした時の操作
-     			$("nav").slideUp();
-			$(".nav-cover").slideUp();
-   } else {
-     // ターゲット要素をクリックした時の操作
-     			$("nav").slideToggle();
-			$(".nav-cover").slideToggle();
-   }
-});
-
-
-//どうやったらiframe内の要素を変更できるか
-//$('#aaa').on('load', function(){        //$('#aaa').contents().find('#mapDiv').hide();
-//    });
-
-});
-</script>
-</body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <!-- Insta Card javascript -->
+    <script src="assets/script.js">
+    </script>
+  </body>
 </html>
